@@ -7,7 +7,7 @@ export const SharedLayout = () => {
             <Header>
                 <Container>
                     <Nav>
-                        <NavigationLink to='/' end>Home</NavigationLink>
+                        <NavigationLink to='/goit-react-hw-05-movies' end>Home</NavigationLink>
                         <NavigationLink to='/movies'>Movies</NavigationLink>
                     </Nav>
                 </Container>

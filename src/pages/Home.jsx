@@ -1,4 +1,4 @@
-import { TrandingFilmList } from 'components/TrandingFilms/TrandingFilmsList';
+import { TrandingFilmList } from 'components/ListFilms/TrandingFilmsList';
 import { useEffect, useState } from 'react';
 import * as MoviesAPI from '../components/MoviesAPI/MoviesAPI'
 
@@ -8,7 +8,7 @@ export const Home = () => {
     useEffect(() => {
         MoviesAPI.getTradingMovies().then(results => setListFilms(results.results));
     }, [])
-    
+
     return (
         <TrandingFilmList listFilms={listFilms}/>
     )

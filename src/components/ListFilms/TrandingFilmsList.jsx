@@ -1,4 +1,4 @@
-import { List, Item, LinkFilm, Title } from "./TrandingFilmsList.styled";
+import { List, Item, LinkFilm, Title } from "./FilmsList.styled";
 
 export const TrandingFilmList = ({listFilms}) => {
     console.log(listFilms)

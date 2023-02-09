@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom"
 import { Main, Input, Button, Form } from "./Movies.styled"
 
 export const Movies = () => {
-    const [_, setSearchParams] = useSearchParams();
+    const [, setSearchParams] = useSearchParams();
     const [searchQuery, setSearchQuery] = useState('');
 
     const setSearch = event => {

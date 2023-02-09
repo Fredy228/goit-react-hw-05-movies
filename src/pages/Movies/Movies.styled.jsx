@@ -33,6 +33,6 @@ export const Button = styled.button`
 `;
 
 export const Form = styled.form`
-    width: 100%;
+    text-align: center;
     padding: 15px;
 `;

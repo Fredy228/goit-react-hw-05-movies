@@ -1,8 +1,15 @@
-import * as MoviesAPI from '../components/MoviesAPI/MoviesAPI';
+import { TrandingFilmList } from 'components/TrandingFilms/TrandingFilmsList';
+import { useEffect, useState } from 'react';
+import * as MoviesAPI from '../components/MoviesAPI/MoviesAPI'
 
 export const Home = () => {
-    MoviesAPI.getTradingMovies()
+    const [listFilms, setListFilms] = useState([]);
+
+    useEffect(() => {
+        MoviesAPI.getTradingMovies().then(results => setListFilms(results.results));
+    }, [])
+    
     return (
-        'Hello'
+        <TrandingFilmList listFilms={listFilms}/>
     )
 };

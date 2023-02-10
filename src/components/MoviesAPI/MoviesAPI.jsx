@@ -11,7 +11,8 @@ export const getTradingMovies = async () => {
 };
 
 export const getSearchMovies = async (query) => {
-    const response = await axios.get(`${BASE_URL}search/keyword?api_key=${KEY_API}&query=${query}`);
+    const response = await axios.get(`${BASE_URL}search/movie?api_key=${KEY_API}&query=${query}`);
+    console.log(response.data)
     return response.data
 };
 

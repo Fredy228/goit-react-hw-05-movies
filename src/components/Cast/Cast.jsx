@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import * as MoviesAPI from '../MoviesAPI/MoviesAPI'
+import * as MoviesAPI from '../MoviesAPI/MoviesAPI';
 import { BASE_IMAGES_URL, DEFAULT_IMG } from "../../components/MoviesAPI/MoviesAPI";
 import { BoxCast, BoxCatsItem, CatsImage, Text } from "./Cast.styled";
 

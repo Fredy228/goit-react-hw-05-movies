@@ -22,10 +22,10 @@ export const FilmSearchList = () => {
     }, [name])
     return(
         <List>
-            {listFilms.map(film => {
+            {listFilms.map(({id, title}) => {
                 return(
-                    <Item key={film.id}>
-                        <LinkFilm to={`${film.id}`}>{film.name}</LinkFilm>
+                    <Item key={id}>
+                        <LinkFilm to={`${id}`}>{title}</LinkFilm>
                     </Item>
                 )
             })}

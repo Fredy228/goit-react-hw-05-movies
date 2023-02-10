@@ -40,6 +40,9 @@ export const PictureFilm = styled.img`
 
 export const Span = styled.span`
     margin-right: 10px;
+    padding: 5px;
+    background-color: #E8D2A6;
+    border-radius: 5px;
 `;
 
 export const AddInfoBar = styled.div`

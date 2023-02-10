@@ -2,9 +2,7 @@ import { Outlet, useParams } from "react-router-dom";
 import { GenerousBlock, GenerousInfo, Main, PictureFilm, PicturesBlock, TextInfo, TitleChapter, TitleFilm, Span, AddInfoBar, AddLink, ListAddLink, ItemAddLink } from "./FilmDetails.styled";
 import * as MoviesAPI from '../../components/MoviesAPI/MoviesAPI';
 import { useEffect, useRef, useState } from "react";
-
-const BASE_IMAGES_URL = 'https://image.tmdb.org/t/p/w500';
-const DEFAULT_IMG ="https://i.ibb.co/cLM23Z5/default-card-img.jpg";
+import { BASE_IMAGES_URL, DEFAULT_IMG } from "../../components/MoviesAPI/MoviesAPI";
 
 export const FilmDetails = () => {
     const isLoading = useRef(false);

@@ -18,9 +18,7 @@ export const PicturesBlock = styled.div`
     margin-right: 15px;
 `;
 
-export const GenerousInfo = styled.div`
-
-`;
+export const GenerousInfo = styled.div``;
 
 export const TitleFilm = styled.h2`
     font-size: 24px;
@@ -60,7 +58,7 @@ export const ListAddLink = styled.ul`
 `;
 
 export const ItemAddLink = styled.li`
-    
+    padding: 0 5px;
 `;
 
 export const AddLink = styled(NavLink)`

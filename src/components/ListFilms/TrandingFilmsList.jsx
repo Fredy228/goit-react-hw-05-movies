@@ -1,7 +1,6 @@
 import { List, Item, LinkFilm, Title } from "./FilmsList.styled";
 
 export const TrandingFilmList = ({listFilms}) => {
-    console.log(listFilms)
     return (
         <>
             <Title>Tranding today</Title>

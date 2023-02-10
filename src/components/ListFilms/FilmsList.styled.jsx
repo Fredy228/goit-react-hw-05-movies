@@ -19,6 +19,8 @@ export const Item = styled.li`
 
 export const LinkFilm = styled(Link)`
     color: black;
+    text-transform: capitalize;
+
 `;
 
 export const Title = styled.h2`

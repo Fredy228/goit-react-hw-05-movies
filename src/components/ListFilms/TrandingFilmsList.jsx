@@ -9,7 +9,7 @@ export const TrandingFilmList = ({listFilms}) => {
                 {listFilms.map((film, index) => {
                     return (
                         <Item key={film.id}>
-                            {index + 1} <LinkFilm to={`${film.id}`}>{film.title}</LinkFilm>
+                            {index + 1} <LinkFilm to={`movies/${film.id}`}>{film.title}</LinkFilm>
                         </Item>
                     )
                 })}

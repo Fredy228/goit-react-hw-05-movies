@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import * as MoviesAPI from '../components/MoviesAPI/MoviesAPI';
 
 
-export const Home = () => {
+const Home = () => {
     const [listFilms, setListFilms] = useState([]);
     const isLoading = useRef(true);
 
@@ -26,3 +26,5 @@ export const Home = () => {
         return <LoadSpin/>
     }
 };
+
+export default Home;

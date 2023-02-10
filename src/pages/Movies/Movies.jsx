@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom"
 import { Main, Input, Button, Form } from "./Movies.styled"
 
-export const Movies = () => {
+const Movies = () => {
     const [, setSearchParams] = useSearchParams();
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -31,3 +31,5 @@ export const Movies = () => {
         </Main>
     )
 }
+
+export default Movies;

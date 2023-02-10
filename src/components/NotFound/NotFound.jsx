@@ -1,6 +1,6 @@
 import { TextP, LinkHome, Main } from "./NotFound.styled";
 
-export const NotFound = () => {
+const NotFound = () => {
 
     return(
         <Main>
@@ -9,3 +9,5 @@ export const NotFound = () => {
         </Main>
     )
 }
+
+export default NotFound;

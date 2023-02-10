@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import * as MoviesAPI from '../MoviesAPI/MoviesAPI';
 import { ItemReviews, ListReviews, TextReviews, TitleReviews } from "./Reviews.styled";
 
-export const Reviews = () => {
+const Reviews = () => {
     const {movieId} = useParams();
     const [moviesReviews, setMoviesReviews] = useState([]);
     const isLoading = useRef(false);
@@ -39,3 +39,5 @@ export const Reviews = () => {
         <LoadSpin/>
     }
 }
+
+export default Reviews;

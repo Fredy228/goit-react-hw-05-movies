@@ -4,7 +4,7 @@ import * as MoviesAPI from '../../components/MoviesAPI/MoviesAPI';
 import { useEffect, useRef, useState } from "react";
 import { BASE_IMAGES_URL, DEFAULT_IMG } from "../../components/MoviesAPI/MoviesAPI";
 
-export const FilmDetails = () => {
+const FilmDetails = () => {
     const isLoading = useRef(false);
     const [filmInfo, setFilmInfo] = useState({});
     const {movieId} = useParams();
@@ -55,3 +55,5 @@ export const FilmDetails = () => {
         )
     }
 };
+
+export default FilmDetails;

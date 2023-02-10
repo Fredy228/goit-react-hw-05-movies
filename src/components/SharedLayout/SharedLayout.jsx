@@ -1,3 +1,5 @@
+import { LoadSpin } from "components/LoadSpin/LoadSpin";
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom"
 import { Container, Nav, NavigationLink, Header } from "./SharedLayout.styled"
 
@@ -13,7 +15,9 @@ export const SharedLayout = () => {
                 </Container>
             </Header>
             <Container>
-                <Outlet/>
+                <Suspense fallback={<LoadSpin/>}>
+                    <Outlet/>
+                </Suspense>
             </Container>
         </>
     )

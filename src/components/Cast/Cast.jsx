@@ -5,7 +5,7 @@ import { BASE_IMAGES_URL, DEFAULT_IMG } from "../../components/MoviesAPI/MoviesA
 import { BoxCast, BoxCatsItem, CatsImage, Text } from "./Cast.styled";
 import { LoadSpin } from "components/LoadSpin/LoadSpin";
 
-export const Cast = () => {
+const Cast = () => {
     const {movieId} = useParams();
     const [moveiesCredits, setMoveiesCredits] = useState([]);
     const isLoading = useRef(false);
@@ -39,3 +39,5 @@ export const Cast = () => {
         <LoadSpin/>
     }
 }
+
+export default Cast;

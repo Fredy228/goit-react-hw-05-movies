@@ -1,4 +1,5 @@
 import { List, Item, LinkFilm, Title } from "./FilmsList.styled";
+import PropTypes from 'prop-types';
 
 export const TrandingFilmList = ({listFilms}) => {
     return (
@@ -15,4 +16,8 @@ export const TrandingFilmList = ({listFilms}) => {
             </List>
         </>
     )
+}
+
+TrandingFilmList.propTypes = {
+    listFilms: PropTypes.array.isRequired
 }

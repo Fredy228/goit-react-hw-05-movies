@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { TextP, LinkHome, Main } from "./NotFound.styled";
 
 export const NotFound = () => {
